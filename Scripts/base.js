@@ -1,5 +1,6 @@
 function loadIframe(url, target) {
     var iframe=document.getElementById(target);
+    
     switch (url)
 
     {       
