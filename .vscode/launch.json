@@ -19,9 +19,14 @@
         {
             "type": "msedge",
             "request": "launch",
-            "name": "Open index.html",
-            "file": "c:\\DEV\\repos\\Website\\index.html"
-
+            "name": "Open Current File",
+            "file": "${file}"
+        },
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "Open Current File",
+            "url": "file://${file}"
         }
     ]
 }

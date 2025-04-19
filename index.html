@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meat http-equiv="refresh" content="5" />
     <title>My Web Page</title>
     <link rel="stylesheet" href="Styles/style.css">
     <script src="Scripts/base.js" ></script>
 <body>
     <header>
         <h1>WEBSITE</h1>
+
     </header>
+
     <main>
         <section id="iframes">
             <div id="kedrio">
-                <iframe src="" title="Kedrio" width="100%" height="500px" id="kedrioIframe"></iframe>
+                <iframe src="" title="Kedrio" id="kedrioIframe"></iframe>
                 <div id="kButtons">
-                    <input type="button" id="Load" value="Load" onclick="loadIframe('kedrio',this);console.log(this)">
+                    <input type="button" id="Load" value="Load" onclick="getElementById('kedrioIframe').src='https://kedr.io/webapp/';this.value='Reload'" />
+                    <input type="button" id="Close" value="Close" onclick="a=getElementById('kedrioIframe').src='';document.getElementById('Load').value='Load';" />
                 </div>
             </div>
             <div>
